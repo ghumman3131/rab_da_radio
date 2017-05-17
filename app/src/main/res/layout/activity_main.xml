@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:vumeter="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="tech.inception.radio.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radio_back"/>
+    <io.gresse.hugo.vumeterlibrary.VuMeterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:id="@+id/vumeter"
+        vumeter:vumeter_stopSize="5dp"
+        vumeter:vumeter_speed="15"
+        vumeter:vumeter_blockNumber="15"
+        vumeter:vumeter_blockSpacing="5dp"
+        vumeter:vumeter_backgroundColor="#a3fde92e"
+        vumeter:vumeter_startOff="false"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+        android:src="@drawable/play_btn"/>
+</RelativeLayout>
